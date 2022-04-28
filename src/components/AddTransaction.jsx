@@ -4,7 +4,7 @@ import { GlobalContext } from "../context/GlobalState";
 const AddTransaction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState("");
-
+ 
 
   const { addTransction } = useContext(GlobalContext);
 
@@ -15,12 +15,12 @@ const AddTransaction = () => {
       text,
       amount: +amount,
     };
-    
-  
+
     addTransction(transaction);
+    setAmount('')
+    setText('')
   };
-
-
+ 
   return (
     <div className="add-trans">
       <h3>Add new trnsaction</h3>
