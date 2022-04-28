@@ -1,5 +1,5 @@
 # Expense Tracker App
-![Website Image](/public/website-img.png)
+![Website Image](/public/website-pic.png)
 
 ### `npm start`
 
