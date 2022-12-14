@@ -1,6 +1,9 @@
 # Expense Tracker App
 ![Website Image](/public/website-img.png)
 
+## live demo: https://m-eldeeb.github.io/expense-tracker-app/
+
+---
 ### `npm start`
 
 Runs the app in the development mode.\
