@@ -1,4 +1,4 @@
-import { createContext, useEffect, useReducer, useState } from "react";
+import { createContext, useEffect, useReducer} from "react";
 import AppReducer from "./AppReducer";
 
 const INITIAL_STATE = {
@@ -8,7 +8,10 @@ const INITIAL_STATE = {
       : JSON.parse(localStorage.getItem("transactions")),
 };
 
+
 const GlobalContext = createContext(INITIAL_STATE);
+
+
 
 const GlobalStateProvicer = ({ children }) => {
   const [state, dispatch] = useReducer(AppReducer, INITIAL_STATE);
@@ -39,4 +42,5 @@ const GlobalStateProvicer = ({ children }) => {
     </GlobalContext.Provider>
   );
 };
+
 export { GlobalContext, GlobalStateProvicer };
